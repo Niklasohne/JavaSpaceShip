@@ -1,5 +1,7 @@
 # JavaSpaceShip
 
+## Funktion
+
 Find the fastest way from Planet A to Planet B
 An Bertrandt Coding Challange Projekt
 
@@ -22,3 +24,7 @@ Process finished with exit code 0
 
 
 an GUI as well as an optimization of the Algorithmen are planed
+
+## used Lib
+
+jackson (core/annotations/databind) for JSON parsing
