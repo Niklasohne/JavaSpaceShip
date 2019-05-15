@@ -125,11 +125,11 @@ public class Graph {
         }
         String[] outArr = new String[out.size()];
         out.toArray(outArr);
-        String x = "DER SCHNELLSTE WEG IST: \n";
+        String x = "THE FASTEST WAY IS: \n";
         for (int i = 0; i < outArr.length - 1; i++) {
             x += "(" + outArr[outArr.length - 1 - i] + ") -> ";
         }
-        x += "("+outArr[0] + ")\nUnd " + finish.getEntf() + "Einheiten lang";
+        x += "("+outArr[0] + ")\nAnd " + finish.getEntf() + "Units long";
         return x;
     }
 

@@ -11,8 +11,8 @@ public class Main {
     static private ObjectMapper mapper = new ObjectMapper();
 
     static private String standart_start = "Erde"; //standart_start
-    //static private String standart_ziel = "b3-r7-r4nd7"; //standart_ziel
-    static private String standart_ziel = "node_875"; //standart_ziel
+    static private String standart_ziel = "b3-r7-r4nd7"; //standart_ziel
+    //static private String standart_ziel = "node_875"; //standart_ziel
 
 
 
