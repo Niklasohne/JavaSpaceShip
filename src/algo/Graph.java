@@ -60,25 +60,19 @@ public class Graph {
     public void findWay() {
 
         PriorityQueue<GNode> aktiv = new PriorityQueue<>(fway);
-
-        aktiv.add(start);
         start.setCurWeight(0);
 
-        int opCount = 0;
-        while (!aktiv.isEmpty()) {
-            //System.out.println("[" +opCount++ + "] :" + aktiv);
-            GNode cur = aktiv.poll();
+        GNode cur = start;
+        while (cur.getCurWeight()<finish.getCurWeight()) {
             for (Integer nachbar : cur.getConList()) {
-                if (cur.getCurWeight() + cur.getConTo(nachbar) < nodes[nachbar].getCurWeight()) {
-                    nodes[nachbar].setParent(cur);
-                    nodes[nachbar].setCurWeight(cur.getCurWeight() + cur.getConTo(nachbar));
-                    aktiv.add(nodes[nachbar]);
-                    nodes[nachbar].setDone(false);
+                GNode nbar = nodes[nachbar];
+                if (cur.getCurWeight() + cur.getConTo(nachbar) < nbar.getCurWeight()) {
+                    nbar.setParent(cur);
+                    nbar.setCurWeight(cur.getCurWeight() + cur.getConTo(nachbar));
+                    aktiv.add(nbar);
                 }
             }
-            cur.setDone(true);
-            if (isRDY(finish))
-                return;
+            cur = aktiv.poll();
         }
     }
 

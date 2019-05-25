@@ -30,15 +30,6 @@ public class Main {
         t2 = System.currentTimeMillis();
         System.out.println("[Parsing Json to Graph Modell] :" +(float)(t2-t1)/1000 + "sec");
 
-        //just for testing how much faster an termination after finding Finish is
-        Graph g2 = jp.parseToGraph();
-
-
-        //Graph kartographieren komplett
-        //t1 = System.currentTimeMillis();
-        //g2.kartograph();
-        //t2 = System.currentTimeMillis();
-        //System.out.println("[kartograph Graph] :" + (float)(t2-t1)/1000 + "sec");
 
         //Graph durchsuchen bis ziel gefunden
         t1 = System.currentTimeMillis();
@@ -46,6 +37,14 @@ public class Main {
         t2 = System.currentTimeMillis();
         System.out.println("[find fastest way from \""+standart_start+"\" to \"" + standart_ziel+ "\"] :" + (float)(t2-t1)/1000 + "sec");
 
+        //just for testing how much faster an termination after finding Finish is
+        //Graph g2 = jp.parseToGraph();
+
+        //Graph kartographieren komplett , deutlich langsamer!
+        //t1 = System.currentTimeMillis();
+        //g2.kartograph();
+        //t2 = System.currentTimeMillis();
+        //System.out.println("[kartograph Graph] :" + (float)(t2-t1)/1000 + "sec");
 
         //kürzester weg
         System.out.println("\n\n" + g.wegToString());

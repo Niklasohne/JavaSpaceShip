@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class GNode {
 
-    private final static int COSTMULTIPLR = 10; // to use priority queue effizently we need int and not 0.x numbers
+    private final static int COSTMULTIPLR = 10000; // to use priority queue effizently we need int and not 0.x numbers
     private String label; //label
     private HashMap<Integer, Float> conTo = new HashMap<>(); //all connected GNodes by id
     private float curWeight = Float.MAX_VALUE; //fastest known way to the Node, if not reachable until now Float.MAX_VALUE
