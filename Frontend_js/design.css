@@ -1,0 +1,77 @@
+table {
+    position: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: 250px;
+    height: 55px;
+    background-color: cadetblue;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-size: 100%;
+    border-radius: 30px;
+
+}
+
+button:hover {
+    background-color: green;
+}
+
+#information {
+    width: 300px;
+    height: 60%;
+    min-width: 280px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: lightskyblue;
+    color: black;
+    padding-left: 10px;
+}
+
+#interface {
+    width: 300px;
+    height: 40%;
+    min-width: 280px;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    background-color: lightskyblue;
+    color: black;
+    padding-left: 10px;
+}
+
+
+#cy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 280px;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #information{
+        width: 100%;
+        height: 340px;
+    }
+    #interface {
+        top: 340px;
+        width: 100%;
+        height: 270px;
+    }
+    #cy {
+        width: 100%;
+        left: 0px;
+        top:610px;
+        height: 400px;
+    }
+
+
+}

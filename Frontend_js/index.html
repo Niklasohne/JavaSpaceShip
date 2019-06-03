@@ -4,49 +4,41 @@
     <meta charset="UTF-8">
     <title>Navi</title>
 </head>
-
-<style>
-    button{
-        width: 300px;
-        height: 60px;
-        background-color: cadetblue;
-        font-size: 18px;
-        box-sizing: border-box;
-        background-size: 100%;
-        border-radius: 30px;
-
-    }
-
-    button:hover{
-
-    }
-
-    #interface {
-        width: 23%;
-        height: 100%;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        background-color: lightskyblue;
-        color: black;
-        padding-left: 10px;
-    }
-
-    #cy {
-        width: 77%;
-        height: 100%;
-        position: absolute;
-        top: 0%;
-        left: 23%;
-        background-color: black;
-    }
-</style>
+<link href="design.css" rel="stylesheet">
 
 <body>
 
 <div id="cy"></div>
 
+<div id="information">
+    <h2>Willkommen bei<br>Interstellar-Maps</h2>
+    Einfach Start und Ziel Eingeben und schon zeigen wir ihnen die schnellste route.<br>
+    Falls sie sich nicht daran erinnern sollten wie die Planeten heißen... es ist ganz leicht, sie sind durchnummeriert
+    von "node_1" bis "node_1000". Nur die Erde und b3-r7-r4nd7 nehmen sich die freiheit anders zu heißen. <br>
+    Unten sehen sie das - uns bekannte - Universum im überblick. <br>
+    Achtung! die länge der strecken sind NICHT equivalent mit der dauer die benötigt wird um von A nach B zu kommen
+    <br>
+    #WunderschönesHTMLinterface
+</div>
+
 <div id="interface">
+    <br>
+    <table id="bt">
+        <tr>
+            <th>
+                <button type="button" id="routewählen">Route suchen</button>
+            </th>
+        </tr>
+        <tr>
+            <th><br></th>
+        </tr>
+        <tr>
+            <th>
+                <button type="button" id="univers">Zeige das ganze Universum</button>
+            </th>
+        </tr>
+    </table>
+    <br>
     <table>
         <tr>
             <th scope="col">Start</th>
@@ -57,30 +49,6 @@
             <th scope="col"><input type="text" id="endIN" value="b3-r7-r4nd7"></th>
         </tr>
     </table>
-    <table id="bt">
-        <tr>
-            <th>
-                <button type="button" id="routewählen">Route suchen</button>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <button type="button" id="univers">Zeige das ganze Universum</button>
-            </th>
-        </tr>
-    </table>
-    <br>
-
-
-    <h2>Willkommen bei Interstellar-Maps.</h2>
-    Einfach Start und Ziel Eingeben und schon zeigen wir ihnen die schnellste route.<br>
-    Falls sie sich nicht daran erinnern sollten wie die Planeten heißen... es ist ganz leicht, sie sind durchnummeriert
-    von "node_1" bis "node_1000". Nur die Erde und b3-r7-r4nd7 nehmen sich die freiheit anders zu heißen. <br>
-    Unten sehen sie das - uns bekannte - Universum im überblick. <br>
-    Achtung! die länge der strecken sind NICHT equivalent mit der dauer die benötigt wird um von A nach B zu kommen
-    <br>
-    <br>
-    #WunderschönesHTMLinterface
 </div>
 
 <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
@@ -93,7 +61,6 @@
 
 <script src="cytoscape-cola.js"></script>
 <script src="graphvis.js"></script>
-<script src="socket.io.js"></script>
 
 </body>
 </html>

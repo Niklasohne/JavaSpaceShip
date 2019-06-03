@@ -82,7 +82,6 @@ function univers() {
                 {
                     selector: 'node',
                     style: {
-                        shape: 'circle',
                         'background-color': 'blue',
                     }
                 }]
@@ -107,7 +106,6 @@ function univers() {
                 }
             })
         });
-        console.log(data);
         whenDoneCircle(cy)
     });
 }

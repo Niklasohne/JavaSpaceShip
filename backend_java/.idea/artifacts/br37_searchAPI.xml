@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="b3r7r4nd7:jar">
-    <output-path>$PROJECT_DIR$</output-path>
+  <artifact type="jar" name="br37_searchAPI">
+    <output-path>$PROJECT_DIR$/..</output-path>
     <root id="archive" name="b3r7r4nd7.jar">
       <element id="module-output" name="b3r7r4nd7" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-databind-2.9.8.jar" path-in-jar="/" />
