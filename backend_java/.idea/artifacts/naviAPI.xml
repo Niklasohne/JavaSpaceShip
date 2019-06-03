@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="naviAPI">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="b3r7r4nd7.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/mf/mfAPI/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="b3r7r4nd7" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-core-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-annotations-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-databind-2.9.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,43 @@
+node {
+  background-color: blue;
+  border-color: black;
+  content: data(id);
+  width: 40;
+  height: 40;
+  min-zoomed-font-size: 14;
+  color: white;
+  font-size: 13;
+  z-index: 1;
+}
+
+
+
+edge {
+  min-zoomed-font-size: 12;
+  font-size: 8;
+  color: white;
+  line-color: gray;
+  width: 5;
+  curve-style: haystack;
+  haystack-radius: 0;
+  opacity: 1;
+}
+
+
+edge[?type] {
+  line-color: green;
+}
+
+edge[!type] {
+  line-color: gray;
+}
+
+node[type = 0] {
+  background-color: red;
+}
+
+
+core {
+  active-bg-color: #000;
+  active-bg-opacity: 0.333;
+}

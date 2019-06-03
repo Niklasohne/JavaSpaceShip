@@ -48,6 +48,7 @@ public class Main {
 
         //kürzester weg
         System.out.println("\n\n" + g.wegToString());
+        System.out.println(g.getWegUndUmfeld());
     }
 }
 
