@@ -11,7 +11,7 @@ var way_json;
 function loader() {
     var xmlreq = new XMLHttpRequest();
     xmlreq.responseType = 'text';
-    xmlreq.open("GET","http://26657-31688.pph-server.de:8888/test?"+document.getElementById('startIN').value+"&" +document.getElementById('endIN').value,true);
+    xmlreq.open("GET","http://134.255.252.242:8888/test?"+document.getElementById('startIN').value+"&" +document.getElementById('endIN').value,true);
     //xmlreq.open("GET", "http://127.0.0.1:8888/test?"+document.getElementById('startIN').value+"&" +document.getElementById('endIN').value, true);
     xmlreq.onload = function () {
         way_json = JSON.parse(xmlreq.responseText);
