@@ -17,7 +17,7 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: #00696d;
 }
 
 #information {
@@ -27,7 +27,9 @@ button:hover {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: lightskyblue;
+    background-color: #60bcbf;
+    font-family: Consolas;
+    font-size: 14px;
     color: black;
     padding-left: 10px;
 }
@@ -39,9 +41,11 @@ button:hover {
     position: absolute;
     top: 60%;
     left: 0%;
-    background-color: lightskyblue;
+    background-color:  #60bcbf ;
     color: black;
     padding-left: 10px;
+    font-family: Consolas;
+    font-size: 20px;
 }
 
 
